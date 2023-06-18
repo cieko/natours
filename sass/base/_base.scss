@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+ /* to avoid anomalies that may be created when we use adter and before element */
+  margin: 0;
+  padding: 0;
+
+ /* forcely applying inheritance to all the elements with property box-sizing */
+  box-sizing: inherit;
+}
+
+html {
+  // this defines the 1rem for the project
+  font-size: 62.5%;
+
+  /* 
+  font-size: 10px;
+  modifying the default font-size 
+  
+  so we should use percentage in relation to root default declarations
+  */
+
+}
+
+body {
+  
+  box-sizing: border-box;
+}
